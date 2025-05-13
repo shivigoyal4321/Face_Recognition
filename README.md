@@ -5,10 +5,16 @@ Face Recognition Attendance System is a Python-based real-time application that 
 
 HOW DOES THIS PROJECT WORK:
 Loads 2 known faces: for example i used pictures with name = Harry and Larry
+
 Starts the webcam on execution, show those known faces
+
 Recognizes those faces in real-time
+
 Displays their names on screen and
+
 Marks attendance by writing their names and timestamps into a CSV file
+
 If unknown face is shown, it displays 
+
 Unknwon
 
