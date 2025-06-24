@@ -1,44 +1,70 @@
+# 🧍‍♂️ Face Recognition Attendance System
 
-# Face Recognition Attendance System
-# ABOUT THIS PROJECT:
-Face Recognition Attendance System is a Python-based real-time application that uses a webcam to recognize known faces and automatically record attendance. 
-Built with OpenCV and face_recognition, it detects and identifies individuals from a preloaded set of images, then logs their names and timestamps into a dated CSV file.
-This project demonstrates practical use of computer vision and facial recognition for automation in classrooms, offices, or access control systems.
+A Python-based real-time application that automates attendance using facial recognition via a webcam feed. Built using OpenCV and the `face_recognition` library, the system detects and identifies individuals from a preloaded image dataset and logs their names with timestamps into dated CSV files.
 
-## Features
-- Detects and recognizes faces.
-- Logs attendance with name and timestamp.
-- Displays a real-time feed of the webcam with attendance info.
+## 🚀 Features
+- 📷 Real-time face detection and recognition from webcam
+- 🧾 Automatic attendance logging with names and timestamps
+- 📊 CSV-based daily logs for easy tracking
+- 🔍 Displays names or “Unknown” on screen in real time
 
-## Demo
-Watch the demo
+## 🛠️ Technologies Used
+- Python  
+- OpenCV  
+- face_recognition  
+- NumPy  
+- CSV  
 
-## How to Run
-1. Install dependencies:
-2. Run the notebook or script.
-3. Press `q` to stop the webcam and save the attendance.
+## 📦 Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/shivigoyal4321/Face_Recognition.git
+   cd Face_Recognition
+Install dependencies:
 
-## Technologies Used
-- OpenCV
-- face_recognition
-- Python
+bash
+Copy
+Edit
+pip install opencv-python face_recognition numpy
+## ▶️ How to Run
+Place reference images of known individuals inside the Images/ directory. The file name (e.g., Harry.jpg) is used as the person's name.
 
-## License
-MIT License
+Run the script or notebook:
+
+bash
+Copy
+Edit
+python face_recognition_attendance.py
+(Or open and run the notebook if using .ipynb)
+
+Press q to stop the webcam and save the attendance log.
+
+## 📂 Project Structure
+
+Face_Recognition/
+├── Images/                  # Folder with known faces (e.g., Harry.jpg, Larry.jpg)
+├── Attendance/              # Folder for saved attendance logs (CSV format)
+├── face_recognition_attendance.ipynb or .py
+├── README.md
+📌 How It Works
+Loads known face encodings from images in the Images/ directory.
+
+Starts webcam and processes each video frame in real time.
+
+Detects faces in the frame using face_recognition.
+
+Matches detected faces with known encodings.
+
+If a match is found, displays the person's name and logs it to Attendance/YYYY-MM-DD.csv.
+
+If no match is found, displays "Unknown".
 
 
-# WORKING EXPLAINED IN DETAIL:
-Loads 2 known faces: for example i used pictures with name = Harry and Larry
+## 📄 License
+This project is licensed under the MIT License.
 
-Starts the webcam on execution, show those known faces
-
-Recognizes those faces in real-time
-
-Displays their names on screen and
-
-Marks attendance by writing their names and timestamps into a CSV file
-
-If unknown face is shown, it displays 
-
-Unknwon
+## 🙋‍♂️ Author
+Shivi Goyal
+📧 shivigoyal4321@gmail.com
+🔗 LinkedIn
 
