@@ -31,22 +31,12 @@ Place reference images of known individuals inside the Images/ directory. The fi
 
 Run the script or notebook:
 
-bash
-Copy
-Edit
 python face_recognition_attendance.py
 (Or open and run the notebook if using .ipynb)
 
 Press q to stop the webcam and save the attendance log.
 
-## 📂 Project Structure
-
-Face_Recognition/
-├── Images/                  # Folder with known faces (e.g., Harry.jpg, Larry.jpg)
-├── Attendance/              # Folder for saved attendance logs (CSV format)
-├── face_recognition_attendance.ipynb or .py
-├── README.md
-📌 How It Works
+## 📌 How It Works
 Loads known face encodings from images in the Images/ directory.
 
 Starts webcam and processes each video frame in real time.
@@ -65,6 +55,5 @@ This project is licensed under the MIT License.
 
 ## 🙋‍♂️ Author
 Shivi Goyal
-📧 shivigoyal4321@gmail.com
-🔗 LinkedIn
+
 
